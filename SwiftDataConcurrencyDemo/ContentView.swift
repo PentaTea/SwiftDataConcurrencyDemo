@@ -8,6 +8,7 @@
 import DataProvider
 import SwiftData
 import SwiftUI
+import SwiftDataKit
 
 struct ContentView: View {
   @Environment(\.modelContext) private var modelContext
@@ -38,7 +39,10 @@ struct ContentView: View {
     let createDataHandler = createDataHandler
     Task.detached {
       if let dataHandler = await createDataHandler() {
-        try await dataHandler.newItem(date: .now)
+        let id = try await dataHandler.newItem(date: .now)
+        let url = id.uriRepresentation
+        print(url)
+        print(url?.persistentIdentifier)
       }
     }
   }

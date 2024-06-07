@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15EC5C8F2C133DE900E9CDCB /* SwiftDataKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15EC5C8E2C133DE900E9CDCB /* SwiftDataKit */; };
 		76BF57FE2BA59CD5001CD8BA /* SwiftDataConcurrencyDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF57FD2BA59CD5001CD8BA /* SwiftDataConcurrencyDemoApp.swift */; };
 		76BF58002BA59CD5001CD8BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF57FF2BA59CD5001CD8BA /* ContentView.swift */; };
 		76BF58042BA59CD6001CD8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BF58032BA59CD6001CD8BA /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76BF581D2BA5BBC2001CD8BA /* DataProvider in Frameworks */,
+				15EC5C8F2C133DE900E9CDCB /* SwiftDataKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +103,7 @@
 			name = SwiftDataConcurrencyDemo;
 			packageProductDependencies = (
 				76BF581C2BA5BBC2001CD8BA /* DataProvider */,
+				15EC5C8E2C133DE900E9CDCB /* SwiftDataKit */,
 			);
 			productName = SwiftDataConcurrencyDemo;
 			productReference = 76BF57FA2BA59CD5001CD8BA /* SwiftDataConcurrencyDemo.app */;
@@ -131,6 +134,7 @@
 			);
 			mainGroup = 76BF57F12BA59CD5001CD8BA;
 			packageReferences = (
+				15EC5C8D2C133DE900E9CDCB /* XCRemoteSwiftPackageReference "SwiftDataKit" */,
 			);
 			productRefGroup = 76BF57FB2BA59CD5001CD8BA /* Products */;
 			projectDirPath = "";
@@ -372,7 +376,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		15EC5C8D2C133DE900E9CDCB /* XCRemoteSwiftPackageReference "SwiftDataKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fatbobman/SwiftDataKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		15EC5C8E2C133DE900E9CDCB /* SwiftDataKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15EC5C8D2C133DE900E9CDCB /* XCRemoteSwiftPackageReference "SwiftDataKit" */;
+			productName = SwiftDataKit;
+		};
 		76BF581C2BA5BBC2001CD8BA /* DataProvider */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DataProvider;
